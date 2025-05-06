@@ -30,7 +30,7 @@ document.getElementById("my-form").addEventListener("submit", function(event) {
     const password = document.getElementById("password");
 
     // login is successful, redirect to home.html
-    window.location.href = "home.html";
+    window.location.href = "index.html";
 });
 
 

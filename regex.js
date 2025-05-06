@@ -49,7 +49,7 @@ document.getElementById("my-form").addEventListener("submit", function(event) {
     }
 
     // All validations passed — redirect to home
-    window.location.href = "home.html";
+    window.location.href = "index.html";
 });
 
 // Function to highlight invalid fields
