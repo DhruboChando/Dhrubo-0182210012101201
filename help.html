@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            height: 100%;
+            font-family: "Courier New", Courier, monospace;
+            color: white;
+        }
+
+        .bgimg {
+            background-color: #ff4f00;
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            text-align: center;
+            font-size: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .middle {
+            transform: translateY(-20%);
+        }
+
+        hr {
+            margin: 20px auto;
+            width: 40%;
+            border: 1px solid white;
+        }
+
+        .home-link {
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.home-link a {
+    color: white;
+    text-decoration: none;
+    display: inline-block; /* Ensures transform scales the element properly */
+    transition: transform 0.2s ease;
+}
+
+.home-link a:hover {
+    transform: scale(1.2);
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="bgimg">
+        <div class="middle">
+            <h1>COMING SOON</h1>
+            <hr>
+            <p>35 days</p>
+        </div>
+        <div class="home-link">
+            <a href="home.html">Go to Home &#8594;</a>
+        </div>
+    </div>
+</body>
+
+</html>

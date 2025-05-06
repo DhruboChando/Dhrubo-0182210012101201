@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Zaiper</title>
+
+    <!-- favicon-->
+    <link rel="icon" type="image/x-icon" href="images/zapier.png">
+
+    <!-- link login.css-->
+     <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <!-- navbar-->
+        <div class="navbar">
+            <div><h2><a href="home.html" style="text-decoration: none; color: #413735;">zaiper</a></h2></div>
+            
+            <ul>
+                <li>
+                    <div style="display: flex; align-items: center; justify-content: center;" class="button1">
+                        <img src="images/information.png" width="12px" height="12px" style="margin-right: 6px;">
+                        <a href="help.html" style="text-decoration: none; color: #413735;">Help</a>
+                    </div>
+                </li>
+                <li>
+                    <div style="display: flex; align-items: center; justify-content: center;" class="button1">
+                        <img src="images/application.png" width="12px" height="12px" style="margin-right: 6px;">
+                        <a href="explore-apps.html" style="text-decoration: none; color: #413735;">Explore Apps</a>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="contact" class="button1">
+                        <a href="contact.html" style="text-decoration: none; color: #413735;">Contact Sales</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="sign-up">
+                        <a href="signup.html" style="text-decoration: none; color: #FFFDF9;">Sign up</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- login intro side-->
+        <div class="intro-side">
+            <h3>Automate across your teams</h3>
+
+            <p>Zapier Enterprise empowers everyone in your business to securely automate their work in minutes, not months—no coding required.</p>
+    
+            <div class="explore">Explore Zaiper Enterprise</div>
+            
+        </div>
+
+        <!-- login side-->
+        <div class="login-side">
+            <h3>Log in to your account</h3>
+
+            <div class="login-2">
+                <div style="background-color: #4285F4; display: flex; align-items: center; padding: 8px;" class="button">
+                    <div style="padding: 0px; margin: 0px; height: 18px; width: 18px; background-color: #FFFDF9; border-radius: 0px; display: flex; align-items: center; justify-content: center; ">
+                        <img src="images/google-symbol.png" height="12px" width="12px">
+                    </div>
+                    <div style="padding: 0px; margin: auto; font-weight: 550; font-size: 12px;">Continue with Google </div>
+                </div>
+
+                <div style="background-color: #3B5999; display: flex; align-items: center; padding: 8px;" class="button">
+                    <div style="padding: 0px; margin: 0px; height: 18px; width: 18px; background-color: #FFFDF9; border-radius: 0px; display: flex; align-items: center; justify-content: center; ">
+                        <img src="images/facebook (1).png" height="12px" width="12px">
+                    </div>
+                    <div style="padding: 0px; margin: auto; font-weight: 550; font-size: 12px;">Continue with Facebook </div>
+                </div>
+
+                <div style="background-color: #201515; display: flex; align-items: center; padding: 8px;" class="button">
+                    <div style="padding: 0px; margin: 0px; height: 18px; width: 18px; background-color: #FFFDF9; border-radius: 0px; display: flex; align-items: center; justify-content: center; ">
+                        <img src="images/microsoft.png" height="12px" width="12px">
+                    </div>
+                    <div style="padding: 0px; margin: auto; font-weight: 550; font-size: 12px;">Continue with Microsoft </div>
+                </div>
+
+                <div style="background-color: #FFFDF9; display: flex; align-items: center; padding: 8px; border: 1px solid #695BE8;" class="button">
+                    <div style="padding: 0px; margin: 0px; height: 18px; width: 18px; background-color: #FFFDF9; border-radius: 0px; display: flex; align-items: center; justify-content: center; ">
+                        <img src="images/user (1).png" height="12px" width="12px">
+                    </div>
+                    <div style="padding: 0px; margin: auto; font-weight: 550; font-size: 12px; color: #695BE8;">Continue with SSO </div>
+                </div>
+    
+                <!-- Horizontal divider-->
+
+                <div style="display: flex; align-items: center; width: 100%;  justify-content: center; margin-top: 20px;">
+                    <div style="flex: 1; height: 1px; background-color: #D7D3C9; padding: 0px;"></div>
+                    <div style="margin-left: 10px; margin-right: 10px; font-size: 10px; padding: 0px; color: #413735;">OR</div>
+                    <div style="flex: 1; height: 1px; background-color: #D7D3C9; padding: 0px;"></div>
+                </div>
+                  
+     
+                <form id="my-form">
+                    <label for="email">Email <span style="color: #FF4F00;">*</span> </label><br>
+                    <input type="text" id="email" name="email" placeholder="Email" required><br>
+    
+                    <label for="password">Password</label><br>
+                    <input type="text" id="password" name="password" placeholder="Password" required><br><br>
+                    <input type="submit" value="Continue" id="submit" disabled>
+                </form> 
+
+                <script src="script.js">
+                    
+                </script>
+    
+                <div style="font-size: 11px; color: #201515; margin-top: 5px; margin-bottom: 0px; color: #413735; text-align: center;">Don't have a Zapier account yet? <a href="signup.html" style="text-decoration: underline; color: #4285F4;">Sign Up</a> </div>
+    
+            </div>
+                    
+        </div>
+
+    </div>
+
+</body>
+</html>

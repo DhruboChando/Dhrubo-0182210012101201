@@ -1,0 +1,264 @@
+/* css variables */
+:root {
+    --clr-white: #FFFDF9;
+    --clr-orange-red: #FF4F00;
+    --clr-light-black: #413735;
+    --clr-white-border: #D7D3C9;
+    --clr-black-font: #201515;
+    --clr-blue-1: #695BE8;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, arial, sans-serif;
+}
+
+/* login */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 20px;
+    row-gap: 24px;
+    margin-bottom: 20px;
+}
+
+/* navbar */
+.navbar {
+    background-color: var(--clr-white);
+    grid-column: 1 / span 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--clr-white-border);
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin-right: 20px;
+    color: var(--clr-light-black);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.button1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 14px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.button1:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+.contact {
+    border: 1px solid #D7D3C9;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+    cursor: pointer;
+}
+
+.contact:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+.sign-up {
+    padding: 2px;
+    border: none;
+    border-radius: 40px;
+    background-color: var(--clr-orange-red);
+    padding: 5px 20px;
+    color: white;
+    font-size: 14px;
+    transition: opacity 0.2s ease;
+}
+
+.sign-up:hover {
+    opacity: 0.6;
+}
+
+/* login intro side */
+.intro-side {
+    margin: auto;
+    margin-left: 65px;
+}
+
+.intro-side h3 {
+    font-size: 36px;
+    margin: 0px 0px 12px;
+    color: var(--clr-black-font);
+}
+
+.intro-side p {
+    font-size: 14px;
+    margin: 10px 10px 24px;
+    color: var(--clr-light-black);
+}
+
+.explore {
+    background-color: var(--clr-blue-1);
+    font-size: 18px;
+    color: var(--clr-white);
+    padding: 10px 18px;
+    width: fit-content;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px 0px;
+    margin-bottom: 100px;
+    cursor: pointer;
+}
+
+.explore:hover {
+    background-color: var(--clr-orange-red);
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    
+}
+
+/* login side */
+.login-2 {
+    margin: auto;
+    width: 70%;
+    height: fit-content;
+    border: 1px solid var(--clr-white-border);
+    border-radius: 3px;
+    padding: 20px 25px;
+}
+
+.login-side h3 {
+    margin: 10px 0px 20px;
+    text-align: center;
+}
+
+.login-2 div {
+    font-size: 14px;
+    color: var(--clr-white);
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+form {
+    font-size: 13px;
+}
+
+label {
+    display: inline-block;
+    color: var(--clr-light-black);
+    margin-bottom: 3px;
+}
+
+input {
+    border: 1px solid var(--clr-white-border);
+    
+    font-size: 14px;
+    padding: 6px;
+    border-radius: 6px;
+    width: 100%;
+    margin-bottom: 8px;
+    caret-color: black;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+#submit {
+    background-color: var(--clr-white-border);
+    color: var(--clr-light-black);
+    font-weight: 550;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.button {
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+    opacity: 1;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.button1:hover {
+    cursor: pointer;
+}
+
+/*CSS Media Quesries for Responsiveness*/
+@media (max-width: 720px) {
+    .container {
+        display: block;
+        margin: 20px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row; /* Horizontal layout */
+        align-items: center;
+
+        padding: 10px;
+    }
+    
+    .navbar ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .navbar li {
+        margin: 0 5px;
+    }
+    
+    .button1 a, .contact a, .contact {
+        display: none; 
+    }
+    
+    .button1 img {
+        width: 20px;
+        height: 20px;
+    }
+    
+
+    .intro-side {
+        display: none;
+    }
+
+    .login-side {
+        margin: 20px auto;
+        width: 90%;
+        
+    }
+
+    .login-2 {
+        width: 100%;
+        padding: 15px;
+    }
+
+}
+
+@media (max-width: 420px) {
+    .navbar ul{
+        display: none;
+    }
+}
+
